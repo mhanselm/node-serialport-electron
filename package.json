@@ -78,7 +78,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "install": "node-pre-gyp install --fallback-to-build",
+    "install": "node-pre-gyp install --runtime=electron --build-from-source",
     "test": "grunt --verbose"
   }
 }

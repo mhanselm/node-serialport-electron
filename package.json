@@ -9,7 +9,7 @@
   },
   "binary": {
     "module_name": "serialport",
-    "module_path": "./build/{configuration}/{node_abi}-{platform}-{arch}/",
+    "module_path": "./build/{configuration}/",
     "package_name": "{node_abi}-{platform}-{arch}.tar.gz",
     "host": "https://github.com/voodootikigod/node-serialport/releases/download/2.0.5"
   },

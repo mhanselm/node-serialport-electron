@@ -10,7 +10,8 @@ var debug = require('debug')('serialport');
 var binary = require('node-pre-gyp');
 var path = require('path');
 var PACKAGE_JSON = path.join(__dirname, 'package.json');
-var binding_path = binary.find(path.resolve(PACKAGE_JSON));
+var glob = require('glob');
+var binding_path = glob.sync(path.resolve(__dirname, 'build/') + '/**/serialport.node')[0];
 var SerialPortBinding = require(binding_path);
 
 var parsers = require('./parsers');
